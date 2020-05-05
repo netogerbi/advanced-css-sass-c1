@@ -1,0 +1,27 @@
+
+/* NORMALIZATION */
+/* universal selector */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* 
+
+This is a technique to convert all px units to rem
+With this, if you change the value of font-size in html selector, all the page will change together.
+so you can simply decide better designs in different sizes!
+
+*/
+html {
+  font-size: 62.5%; /* used to convert all px units to rem */
+  /* the percentual is just to accept users configuration */
+  /* 62.5% = 10px */
+}
+
+body {
+  box-sizing: border-box;
+}
