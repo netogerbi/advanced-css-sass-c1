@@ -1,6 +1,7 @@
 
 .btn {
 
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -11,6 +12,10 @@
     transition: all .2s;
     position: relative;
     font-size: $default-font-size;
+
+    // changes for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -21,6 +26,11 @@
       transform: scalex(1.4) scaleY(1.6);
       opacity: 0;
     }
+  }
+
+  // changes for the <button> element
+  &:focus {
+    outline: none;
   }
 
   &:active {
