@@ -20,6 +20,22 @@ html {
   font-size: 62.5%; /* used to convert all px units to rem */
   /* the percentual is just to accept users configuration */
   /* 62.5% = 10px */
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 65%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(phone) {
+    font-size: 30%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 65%
+  }
 }
 
 body {
