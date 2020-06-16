@@ -7,6 +7,10 @@
 1800PX + :          BIG MONITORS
 */
 /*
+ * OPTIMIZED ORDER TO CREATE RESPONSIVE:
+ * Base + Tipography >> general layout + grid >> page layout >> components
+ */
+/*
  * $breakpoint phone|tab-port|tab-land|big-desktop
  */
 /* BASE */
@@ -19,14 +23,12 @@
   padding: 0;
   box-sizing: inherit; }
 
-/* 
-
-This is a technique to convert all px units to rem
-With this, if you change the value of font-size in html selector, all the page will change together.
-so you can simply decide better designs in different sizes!
-
-*/
 html {
+  /* 
+  This is a technique to convert all px units to rem
+  With this, if you change the value of font-size in html selector, all the page will change together.
+  so you can simply decide better designs in different sizes!
+  */
   font-size: 62.5%;
   /* used to convert all px units to rem */
   /* the percentual is just to accept users configuration */
@@ -37,15 +39,13 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 /* ANIMATIONS */
 @keyframes moveInLeft {
@@ -81,8 +81,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;

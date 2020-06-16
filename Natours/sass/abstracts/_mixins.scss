@@ -24,6 +24,10 @@
 @mixin respond-phone {
   @media (max-width: 600px){ @content };
 }
+/*
+ * OPTIMIZED ORDER TO CREATE RESPONSIVE:
+ * Base + Tipography >> general layout + grid >> page layout >> components
+ */
 
 /*
  * $breakpoint phone|tab-port|tab-land|big-desktop
