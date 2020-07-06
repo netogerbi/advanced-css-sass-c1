@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  background-color: orangered;
   top: 0;
   left: 0;
   background-color: rgba($color-black, .8);
@@ -11,6 +10,12 @@
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px))  or (backdrop-filter: blur(10px)){
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+  }
 
   // OPEN STATES
   &:target {
