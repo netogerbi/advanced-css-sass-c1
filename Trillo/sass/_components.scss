@@ -112,18 +112,38 @@
     align-items: center;
   }
 
-  &__user {
-
-  }
-
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
     margin-right: 2rem;
   }
 
-  &__user-name {
+}
+
+/////////////////////////////////////////////////////
+// SIDE NAV
+.side-nav {
+  &__item {
 
   }
 
+  &__link{
+
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+
+}
+
+/////////////////////////////////////////////////////
+// LEGAL TEXT
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem;
 }
