@@ -36,12 +36,13 @@
 
   // TEST
   // background-color: orangered;
-  height: 80rem;
+  // height: 80rem;
 
   flex: 1;
 }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
@@ -49,7 +50,9 @@
 }
 
 .description {
-  background-color: orchid;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
 }
